@@ -33,7 +33,7 @@ Directory Indexing: The /admin and /CVS directories were visible, exposing organ
 System Files: It was possible to obtain the /etc/passwd file by manipulating the showimage.php file parameter.
 
 3. Reflected Cross-Site Scripting (Critical)
-The search bar was vulnerable to reflected XSS using payloads like "<img src=s onerror=alert(1)>".
+The search bar was vulnerable to reflected XSS using payloads.
 Impact: Attackers could run malicious code in a victim's browser to steal session information or redirect users to malicious sites.
 
 4. Broken Authentication & Weak Policy (High)
