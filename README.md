@@ -9,7 +9,7 @@ Prepared By: Muhammed Hadhi K P
 Date: March 2, 2026 
 Project ID: 001 
 
-🛠 Methodology & Tools
+Methodology & Tools :
 The assessment followed standard penetration testing phases: Planning, Discovery, Attack, and Reporting.
 
 The following industry-standard tools were used for scanning and validation:
@@ -18,10 +18,10 @@ The following industry-standard tools were used for scanning and validation:
 3.Burpsuite 
 4.Gobuster 
 
-📊 Summary of Findings
+Summary of Findings
 The audit identified a total of 9 major records categorized by severity based on CVSSV3 scores:
 
-🔍 Key Vulnerabilities Identified
+Key Vulnerabilities Identified :
 1. SQL Injection (Critical)
 The login page and various parameters (e.g., product.php?pic=1) were found vulnerable to SQL injection.
 Impact: Attackers can bypass authentication using commands like ' or '1'='1 and access sensitive database tables, including user credentials and credit card numbers.
@@ -40,7 +40,7 @@ Impact: Attackers could run malicious code in a victim's browser to steal sessio
 Brute-force: The login page lacked rate-limiting, allowing for successful trial-and-error attacks.
 Weak Passwords: The system allowed four-character passwords and lacked Multi-Factor Authentication (MFA).
 
-💡 General Recommendations
+General Recommendations :
 Input Validation: Implement parameterized queries and prepared statements to prevent SQL injection.
 Access Control: Remove publicly accessible credential files and restrict access to sensitive directories like /admin.
 Encryption: Transition the website from HTTP to HTTPS to ensure all data is transmitted in encrypted form.
